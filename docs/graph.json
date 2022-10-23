@@ -1,0 +1,2061 @@
+{
+    "edges": [
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline (close)",
+            "svg_id": "edge_0",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (close)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "edge_1",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "edge_2",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "edge_3",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "edge_4",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "edge_5",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)",
+            "svg_id": "edge_6",
+            "target": "[root] module.cicd_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "edge_7",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "edge_8",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.build_timeout (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "edge_9",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)"
+        },
+        {
+            "edge_type": 2,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "edge_10",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_image (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "edge_11",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_12",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_13",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection.github (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_14",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_15",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_16",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "edge_17",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection.github (expand)",
+            "svg_id": "edge_18",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection.github (expand)",
+            "svg_id": "edge_19",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)",
+            "svg_id": "edge_20",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)",
+            "svg_id": "edge_21",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)",
+            "svg_id": "edge_22",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)",
+            "svg_id": "edge_23",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)",
+            "svg_id": "edge_24",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)",
+            "svg_id": "edge_25",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)",
+            "svg_id": "edge_26",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)",
+            "svg_id": "edge_27",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)",
+            "svg_id": "edge_28",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)",
+            "svg_id": "edge_29",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)",
+            "svg_id": "edge_30",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)",
+            "svg_id": "edge_31",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)",
+            "svg_id": "edge_32",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)",
+            "svg_id": "edge_33",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)",
+            "svg_id": "edge_34",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)",
+            "svg_id": "edge_35",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)",
+            "svg_id": "edge_36",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)",
+            "svg_id": "edge_37",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)",
+            "svg_id": "edge_38",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)",
+            "svg_id": "edge_39",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)",
+            "svg_id": "edge_40",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.pipeline_bucket_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)",
+            "svg_id": "edge_41",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)",
+            "svg_id": "edge_42",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)",
+            "svg_id": "edge_43",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)",
+            "svg_id": "edge_44",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)",
+            "svg_id": "edge_45",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild (expand)",
+            "svg_id": "edge_46",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild (expand)",
+            "svg_id": "edge_47",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild_frontend (expand)",
+            "svg_id": "edge_48",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild_frontend (expand)",
+            "svg_id": "edge_49",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline (expand)",
+            "svg_id": "edge_50",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline (expand)",
+            "svg_id": "edge_51",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline_frontend (expand)",
+            "svg_id": "edge_52",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline_frontend (expand)",
+            "svg_id": "edge_53",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)",
+            "svg_id": "edge_54",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)",
+            "svg_id": "edge_55",
+            "target": "[root] module.cicd_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)",
+            "svg_id": "edge_56",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)",
+            "svg_id": "edge_57",
+            "target": "[root] module.cicd_pipeline.var.branch_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.bucket_acl (expand)",
+            "svg_id": "edge_58",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 2,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.build_timeout (expand)",
+            "svg_id": "edge_59",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)",
+            "svg_id": "edge_60",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)",
+            "svg_id": "edge_61",
+            "target": "[root] module.cicd_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_image (expand)",
+            "svg_id": "edge_62",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)",
+            "svg_id": "edge_63",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)",
+            "svg_id": "edge_64",
+            "target": "[root] module.cicd_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.pipeline_bucket_name (expand)",
+            "svg_id": "edge_65",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.pipeline_bucket_name (expand)",
+            "svg_id": "edge_66",
+            "target": "[root] module.cicd_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)",
+            "svg_id": "edge_67",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)",
+            "svg_id": "edge_68",
+            "target": "[root] module.cicd_pipeline.var.repository_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)",
+            "svg_id": "edge_69",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)",
+            "svg_id": "edge_70",
+            "target": "[root] module.cicd_pipeline.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)",
+            "svg_id": "edge_71",
+            "target": "[root] module.cicd_pipeline.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.application_name (expand)",
+            "svg_id": "edge_72",
+            "target": "[root] local.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.application_name (expand)",
+            "svg_id": "edge_73",
+            "target": "[root] module.cicd_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.branch_name (expand)",
+            "svg_id": "edge_74",
+            "target": "[root] module.cicd_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.environment (expand)",
+            "svg_id": "edge_75",
+            "target": "[root] local.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.environment (expand)",
+            "svg_id": "edge_76",
+            "target": "[root] module.cicd_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.cicd_pipeline.var.repository_name (expand)",
+            "svg_id": "edge_77",
+            "target": "[root] module.cicd_pipeline (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app (close)",
+            "svg_id": "edge_78",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app (close)",
+            "svg_id": "edge_79",
+            "target": "[root] module.web_app.output.website_cdn_id (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app (close)",
+            "svg_id": "edge_80",
+            "target": "[root] module.web_app.output.website_endpoint (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_81",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_82",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_83",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy.website_bucket_policy (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_84",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_85",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration.website_config (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_86",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_cdn_id (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "edge_87",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_endpoint (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)",
+            "svg_id": "edge_88",
+            "target": "[root] module.web_app (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "edge_89",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "edge_90",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "edge_91",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "edge_92",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "edge_93",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)",
+            "svg_id": "edge_94",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)",
+            "svg_id": "edge_95",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)",
+            "svg_id": "edge_96",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)",
+            "svg_id": "edge_97",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone.route53_zone (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)",
+            "svg_id": "edge_98",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)",
+            "svg_id": "edge_99",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)",
+            "svg_id": "edge_100",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)",
+            "svg_id": "edge_101",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy.website_bucket_policy (expand)",
+            "svg_id": "edge_102",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document.s3_bucket_policy (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)",
+            "svg_id": "edge_103",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)",
+            "svg_id": "edge_104",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.versioning (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration.website_config (expand)",
+            "svg_id": "edge_105",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)",
+            "svg_id": "edge_106",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)",
+            "svg_id": "edge_107",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document.s3_bucket_policy (expand)",
+            "svg_id": "edge_108",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document.s3_bucket_policy (expand)",
+            "svg_id": "edge_109",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone.route53_zone (expand)",
+            "svg_id": "edge_110",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone.route53_zone (expand)",
+            "svg_id": "edge_111",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_cdn_id (expand)",
+            "svg_id": "edge_112",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_endpoint (expand)",
+            "svg_id": "edge_113",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia (close)",
+            "svg_id": "edge_114",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia",
+            "svg_id": "edge_115",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_acl (expand)",
+            "svg_id": "edge_116",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)",
+            "svg_id": "edge_117",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)",
+            "svg_id": "edge_118",
+            "target": "[root] module.web_app.var.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)",
+            "svg_id": "edge_119",
+            "target": "[root] module.web_app.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)",
+            "svg_id": "edge_120",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)",
+            "svg_id": "edge_121",
+            "target": "[root] module.web_app.var.certificate_domain_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)",
+            "svg_id": "edge_122",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)",
+            "svg_id": "edge_123",
+            "target": "[root] module.web_app.var.cloudfront_domain_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.environment (expand)",
+            "svg_id": "edge_124",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.environment (expand)",
+            "svg_id": "edge_125",
+            "target": "[root] module.web_app.var.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.versioning (expand)",
+            "svg_id": "edge_126",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.output.website_cdn_id (expand)",
+            "svg_id": "edge_127",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_cdn_id (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.output.website_endpoint (expand)",
+            "svg_id": "edge_128",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_endpoint (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.application_name (expand)",
+            "svg_id": "edge_129",
+            "target": "[root] local.application_name (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.application_name (expand)",
+            "svg_id": "edge_130",
+            "target": "[root] module.web_app (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.certificate_domain_name (expand)",
+            "svg_id": "edge_131",
+            "target": "[root] module.web_app (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.cloudfront_domain_name (expand)",
+            "svg_id": "edge_132",
+            "target": "[root] module.web_app (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.environment (expand)",
+            "svg_id": "edge_133",
+            "target": "[root] local.environment (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] module.web_app.var.environment (expand)",
+            "svg_id": "edge_134",
+            "target": "[root] module.web_app (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] output.website_cdn_id (expand)",
+            "svg_id": "edge_135",
+            "target": "[root] module.web_app.output.website_cdn_id (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] output.website_endpoint (expand)",
+            "svg_id": "edge_136",
+            "target": "[root] module.web_app.output.website_endpoint (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_137",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_138",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_139",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_140",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_141",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_142",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_143",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_144",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy.website_bucket_policy (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_145",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "edge_146",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration.website_config (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_147",
+            "target": "[root] module.cicd_pipeline (close)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_148",
+            "target": "[root] module.web_app (close)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_149",
+            "target": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia (close)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_150",
+            "target": "[root] output.website_cdn_id (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_151",
+            "target": "[root] output.website_endpoint (expand)"
+        },
+        {
+            "edge_type": 1,
+            "source": "[root] root",
+            "svg_id": "edge_152",
+            "target": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)"
+        },
+        {
+            "edge_type": 3,
+            "source": "[root] module.cicd_pipeline.module.frontend_pipeline.var.build_timeout (expand)",
+            "svg_id": "edge_153",
+            "target": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_image (expand)"
+        }
+    ],
+    "nodes": [
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_codebuild_project"
+            ],
+            "resource_name": "frontend_build_project",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)",
+            "svg_id": "node_0",
+            "type": "aws_codebuild_project"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_codepipeline"
+            ],
+            "resource_name": "main",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_codepipeline.main (expand)",
+            "svg_id": "node_1",
+            "type": "aws_codepipeline"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection.github (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_codestarconnections_connection"
+            ],
+            "resource_name": "github",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_codestarconnections_connection.github (expand)",
+            "svg_id": "node_2",
+            "type": "aws_codestarconnections_connection"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_policy"
+            ],
+            "resource_name": "codebuild_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codebuild_frontend (expand)",
+            "svg_id": "node_3",
+            "type": "aws_iam_policy"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_policy"
+            ],
+            "resource_name": "codepipeline_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_policy.codepipeline_frontend (expand)",
+            "svg_id": "node_4",
+            "type": "aws_iam_policy"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_role"
+            ],
+            "resource_name": "codebuild_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codebuild_frontend (expand)",
+            "svg_id": "node_5",
+            "type": "aws_iam_role"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_role"
+            ],
+            "resource_name": "codepipeline_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role.codepipeline_frontend (expand)",
+            "svg_id": "node_6",
+            "type": "aws_iam_role"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_role_policy_attachment"
+            ],
+            "resource_name": "codebuild_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codebuild_frontend (expand)",
+            "svg_id": "node_7",
+            "type": "aws_iam_role_policy_attachment"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_iam_role_policy_attachment"
+            ],
+            "resource_name": "codepipeline_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_iam_role_policy_attachment.codepipeline_frontend (expand)",
+            "svg_id": "node_8",
+            "type": "aws_iam_role_policy_attachment"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_s3_bucket"
+            ],
+            "resource_name": "codebuild_bucket",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.codebuild_bucket (expand)",
+            "svg_id": "node_9",
+            "type": "aws_s3_bucket"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_s3_bucket"
+            ],
+            "resource_name": "pipeline_bucket",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket.pipeline_bucket (expand)",
+            "svg_id": "node_10",
+            "type": "aws_s3_bucket"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_s3_bucket_acl"
+            ],
+            "resource_name": "codebuild_bucket_acl",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.codebuild_bucket_acl (expand)",
+            "svg_id": "node_11",
+            "type": "aws_s3_bucket_acl"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "aws_s3_bucket_acl"
+            ],
+            "resource_name": "pipeline_bucket_acl",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.aws_s3_bucket_acl.pipeline_bucket_acl (expand)",
+            "svg_id": "node_12",
+            "type": "aws_s3_bucket_acl"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "data",
+                "aws_iam_policy_document"
+            ],
+            "resource_name": "codebuild",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild (expand)",
+            "svg_id": "node_13",
+            "type": "aws_iam_policy_document"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "data",
+                "aws_iam_policy_document"
+            ],
+            "resource_name": "codebuild_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codebuild_frontend (expand)",
+            "svg_id": "node_14",
+            "type": "aws_iam_policy_document"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "data",
+                "aws_iam_policy_document"
+            ],
+            "resource_name": "codepipeline",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline (expand)",
+            "svg_id": "node_15",
+            "type": "aws_iam_policy_document"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline_frontend (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "data",
+                "aws_iam_policy_document"
+            ],
+            "resource_name": "codepipeline_frontend",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.data.aws_iam_policy_document.codepipeline_frontend (expand)",
+            "svg_id": "node_16",
+            "type": "aws_iam_policy_document"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_cloudfront_distribution"
+            ],
+            "resource_name": "s3_distribution",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_distribution.s3_distribution (expand)",
+            "svg_id": "node_17",
+            "type": "aws_cloudfront_distribution"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_cloudfront_origin_access_identity"
+            ],
+            "resource_name": "this",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_cloudfront_origin_access_identity.this (expand)",
+            "svg_id": "node_18",
+            "type": "aws_cloudfront_origin_access_identity"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_route53_record"
+            ],
+            "resource_name": "demo_domain",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_route53_record.demo_domain (expand)",
+            "svg_id": "node_19",
+            "type": "aws_route53_record"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_s3_bucket"
+            ],
+            "resource_name": "website_bucket",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket.website_bucket (expand)",
+            "svg_id": "node_20",
+            "type": "aws_s3_bucket"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_s3_bucket_acl"
+            ],
+            "resource_name": "website_bucket_acl",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)",
+            "svg_id": "node_21",
+            "type": "aws_s3_bucket_acl"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy.website_bucket_policy (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_s3_bucket_policy"
+            ],
+            "resource_name": "website_bucket_policy",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_policy.website_bucket_policy (expand)",
+            "svg_id": "node_22",
+            "type": "aws_s3_bucket_policy"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_s3_bucket_versioning"
+            ],
+            "resource_name": "website_versioning",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)",
+            "svg_id": "node_23",
+            "type": "aws_s3_bucket_versioning"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration.website_config (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "aws_s3_bucket_website_configuration"
+            ],
+            "resource_name": "website_config",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_website_configuration.website_config (expand)",
+            "svg_id": "node_24",
+            "type": "aws_s3_bucket_website_configuration"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "data",
+                "aws_acm_certificate"
+            ],
+            "resource_name": "certificate",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_acm_certificate.certificate (expand)",
+            "svg_id": "node_25",
+            "type": "aws_acm_certificate"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document.s3_bucket_policy (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "data",
+                "aws_iam_policy_document"
+            ],
+            "resource_name": "s3_bucket_policy",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_iam_policy_document.s3_bucket_policy (expand)",
+            "svg_id": "node_26",
+            "type": "aws_iam_policy_document"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone.route53_zone (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "data",
+                "aws_route53_zone"
+            ],
+            "resource_name": "route53_zone",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.data.aws_route53_zone.route53_zone (expand)",
+            "svg_id": "node_27",
+            "type": "aws_route53_zone"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "provider[\\\"registry",
+                "terraform",
+                "io/hashicorp/aws\\\"]"
+            ],
+            "resource_name": "virginia",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia",
+            "svg_id": "node_28",
+            "type": "io/hashicorp/aws\\\"]"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "io/hashicorp/aws\\\"]",
+            "simple_name": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+            "svg_id": "node_29",
+            "type": "terraform"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline (close)",
+            "module": "module",
+            "modules": [],
+            "resource_name": "cicd_pipeline",
+            "simple_name": "module.cicd_pipeline (close)",
+            "svg_id": "node_30",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline (close)",
+            "module": "module.cicd_pipeline.module",
+            "modules": [
+                "cicd_pipeline"
+            ],
+            "resource_name": "frontend_pipeline",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline (close)",
+            "svg_id": "node_31",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline (expand)",
+            "module": "module.cicd_pipeline.module",
+            "modules": [
+                "cicd_pipeline"
+            ],
+            "resource_name": "frontend_pipeline",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline (expand)",
+            "svg_id": "node_32",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline (expand)",
+            "module": "module",
+            "modules": [],
+            "resource_name": "cicd_pipeline",
+            "simple_name": "module.cicd_pipeline (expand)",
+            "svg_id": "node_33",
+            "type": "module"
+        },
+        {
+            "cluster": "cluster[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)_var_[root] module.cicd_pipeline.module.frontend_pipeline (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.build_timeout (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "build_timeout",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.build_timeout (expand)",
+            "svg_id": "node_34",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "codebuild_bucket_name",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.codebuild_bucket_name (expand)",
+            "svg_id": "node_35",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.cicd_pipeline.module.frontend_pipeline.aws_codebuild_project.frontend_build_project (expand)_var_[root] module.cicd_pipeline.module.frontend_pipeline (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.codebuild_image (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "codebuild_image",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.codebuild_image (expand)",
+            "svg_id": "node_36",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "s3_bucket_destination",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.s3_bucket_destination (expand)",
+            "svg_id": "node_37",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "branch_name",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)",
+            "svg_id": "node_38",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "repository_name",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)",
+            "svg_id": "node_39",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "application_name",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.application_name (expand)",
+            "svg_id": "node_40",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "environment",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.environment (expand)",
+            "svg_id": "node_41",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.pipeline_bucket_name (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "pipeline_bucket_name",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.pipeline_bucket_name (expand)",
+            "svg_id": "node_42",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.module.frontend_pipeline.var.bucket_acl (expand)",
+            "module": "module.cicd_pipeline.module.frontend_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "frontend_pipeline",
+                "var"
+            ],
+            "resource_name": "bucket_acl",
+            "simple_name": "module.cicd_pipeline.module.frontend_pipeline.var.bucket_acl (expand)",
+            "svg_id": "node_43",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.var.application_name (expand)",
+            "module": "module.cicd_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "var"
+            ],
+            "resource_name": "application_name",
+            "simple_name": "module.cicd_pipeline.var.application_name (expand)",
+            "svg_id": "node_44",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.cicd_pipeline.module.frontend_pipeline.var.branch_name (expand)_var_[root] module.cicd_pipeline (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.var.branch_name (expand)",
+            "module": "module.cicd_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "var"
+            ],
+            "resource_name": "branch_name",
+            "simple_name": "module.cicd_pipeline.var.branch_name (expand)",
+            "svg_id": "node_45",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.var.environment (expand)",
+            "module": "module.cicd_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "var"
+            ],
+            "resource_name": "environment",
+            "simple_name": "module.cicd_pipeline.var.environment (expand)",
+            "svg_id": "node_46",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.cicd_pipeline.module.frontend_pipeline.var.repository_name (expand)_var_[root] module.cicd_pipeline (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.cicd_pipeline.var.repository_name (expand)",
+            "module": "module.cicd_pipeline.var",
+            "modules": [
+                "cicd_pipeline",
+                "var"
+            ],
+            "resource_name": "repository_name",
+            "simple_name": "module.cicd_pipeline.var.repository_name (expand)",
+            "svg_id": "node_47",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] local.application_name (expand)",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "application_name",
+            "simple_name": "local.application_name (expand)",
+            "svg_id": "node_48",
+            "type": "local"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] local.environment (expand)",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "environment",
+            "simple_name": "local.environment (expand)",
+            "svg_id": "node_49",
+            "type": "local"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app (close)",
+            "module": "module",
+            "modules": [],
+            "resource_name": "web_app",
+            "simple_name": "module.web_app (close)",
+            "svg_id": "node_50",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "module": "module.web_app.module",
+            "modules": [
+                "web_app"
+            ],
+            "resource_name": "static_website_and_cloudfront_distribution",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution (close)",
+            "svg_id": "node_51",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.output.website_cdn_id (expand)",
+            "module": "module.web_app.output",
+            "modules": [
+                "web_app",
+                "output"
+            ],
+            "resource_name": "website_cdn_id",
+            "simple_name": "module.web_app.output.website_cdn_id (expand)",
+            "svg_id": "node_52",
+            "type": "output"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.output.website_endpoint (expand)",
+            "module": "module.web_app.output",
+            "modules": [
+                "web_app",
+                "output"
+            ],
+            "resource_name": "website_endpoint",
+            "simple_name": "module.web_app.output.website_endpoint (expand)",
+            "svg_id": "node_53",
+            "type": "output"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_cdn_id (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.output",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "output"
+            ],
+            "resource_name": "website_cdn_id",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.output.website_cdn_id (expand)",
+            "svg_id": "node_54",
+            "type": "output"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.output.website_endpoint (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.output",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "output"
+            ],
+            "resource_name": "website_endpoint",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.output.website_endpoint (expand)",
+            "svg_id": "node_55",
+            "type": "output"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)",
+            "module": "module.web_app.module",
+            "modules": [
+                "web_app"
+            ],
+            "resource_name": "static_website_and_cloudfront_distribution",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution (expand)",
+            "svg_id": "node_56",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app (expand)",
+            "module": "module",
+            "modules": [],
+            "resource_name": "web_app",
+            "simple_name": "module.web_app (expand)",
+            "svg_id": "node_57",
+            "type": "module"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "cloudfront_domain_name",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)",
+            "svg_id": "node_58",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.environment (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "environment",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.environment (expand)",
+            "svg_id": "node_59",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "bucket_name",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_name (expand)",
+            "svg_id": "node_60",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_acl.website_bucket_acl (expand)_var_[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_acl (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "bucket_acl",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.bucket_acl (expand)",
+            "svg_id": "node_61",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.web_app.module.static_website_and_cloudfront_distribution.aws_s3_bucket_versioning.website_versioning (expand)_var_[root] module.web_app.module.static_website_and_cloudfront_distribution (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.versioning (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "versioning",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.versioning (expand)",
+            "svg_id": "node_62",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.var",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "var"
+            ],
+            "resource_name": "certificate_domain_name",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)",
+            "svg_id": "node_63",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia (close)",
+            "module": "module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+            "modules": [
+                "web_app",
+                "static_website_and_cloudfront_distribution",
+                "provider[\\\"registry",
+                "terraform",
+                "io/hashicorp/aws\\\"]"
+            ],
+            "resource_name": "virginia",
+            "simple_name": "module.web_app.module.static_website_and_cloudfront_distribution.provider[\\\"registry.terraform.io/hashicorp/aws\\\"].virginia (close)",
+            "svg_id": "node_64",
+            "type": "io/hashicorp/aws\\\"]"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.var.application_name (expand)",
+            "module": "module.web_app.var",
+            "modules": [
+                "web_app",
+                "var"
+            ],
+            "resource_name": "application_name",
+            "simple_name": "module.web_app.var.application_name (expand)",
+            "svg_id": "node_65",
+            "type": "var"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.var.environment (expand)",
+            "module": "module.web_app.var",
+            "modules": [
+                "web_app",
+                "var"
+            ],
+            "resource_name": "environment",
+            "simple_name": "module.web_app.var.environment (expand)",
+            "svg_id": "node_66",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.web_app.module.static_website_and_cloudfront_distribution.var.certificate_domain_name (expand)_var_[root] module.web_app (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.var.certificate_domain_name (expand)",
+            "module": "module.web_app.var",
+            "modules": [
+                "web_app",
+                "var"
+            ],
+            "resource_name": "certificate_domain_name",
+            "simple_name": "module.web_app.var.certificate_domain_name (expand)",
+            "svg_id": "node_67",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] module.web_app.module.static_website_and_cloudfront_distribution.var.cloudfront_domain_name (expand)_var_[root] module.web_app (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] module.web_app.var.cloudfront_domain_name (expand)",
+            "module": "module.web_app.var",
+            "modules": [
+                "web_app",
+                "var"
+            ],
+            "resource_name": "cloudfront_domain_name",
+            "simple_name": "module.web_app.var.cloudfront_domain_name (expand)",
+            "svg_id": "node_68",
+            "type": "var"
+        },
+        {
+            "cluster": "cluster[root] root_output_[root] module.web_app.output.website_cdn_id (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] output.website_cdn_id (expand)",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "website_cdn_id",
+            "simple_name": "output.website_cdn_id (expand)",
+            "svg_id": "node_69",
+            "type": "output"
+        },
+        {
+            "cluster": "cluster[root] root_output_[root] module.web_app.output.website_endpoint (expand)",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] output.website_endpoint (expand)",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "website_endpoint",
+            "simple_name": "output.website_endpoint (expand)",
+            "svg_id": "node_70",
+            "type": "output"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "io/hashicorp/aws\\\"]",
+            "simple_name": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)",
+            "svg_id": "node_71",
+            "type": "terraform"
+        },
+        {
+            "cluster": "root",
+            "definition": "",
+            "group": 20000,
+            "label": "[root] root",
+            "module": "root",
+            "modules": [
+                "root"
+            ],
+            "resource_name": "",
+            "simple_name": "root",
+            "svg_id": "node_72",
+            "type": ""
+        }
+    ]
+}
