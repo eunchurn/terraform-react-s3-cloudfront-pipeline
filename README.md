@@ -2,6 +2,8 @@
 
 # Terraform CRA AWS Infrastructure
 
+CRA app deployment via Terraform AWS S3, CloudFront, CodePipeline, CodeBuild
+
 [Blog post](https://www.eunchurn.com/blog/development/2022-10-23-tWIL)
 ## Prerequisite
 
