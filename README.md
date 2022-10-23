@@ -1,3 +1,5 @@
+[![tfsec](https://github.com/eunchurn/terraform-react-s3-cloudfront-pipeline/actions/workflows/tfsec.yml/badge.svg)](https://github.com/eunchurn/terraform-react-s3-cloudfront-pipeline/actions/workflows/tfsec.yml)
+
 # Terraform CRA AWS Infrastructure
 
 [Blog post](https://www.eunchurn.com/blog/development/2022-10-23-tWIL)
