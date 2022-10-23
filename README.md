@@ -4,8 +4,9 @@
 
 CRA app deployment via Terraform AWS S3, CloudFront, CodePipeline, CodeBuild
 
-[Show Graph](https://eunchurn.github.io/terraform-react-s3-cloudfront-pipeline/)
-[Blog post](https://www.eunchurn.com/blog/development/2022-10-23-tWIL)
+- [Show Infra Graph](https://eunchurn.github.io/terraform-react-s3-cloudfront-pipeline/)
+
+- [Blog post](https://www.eunchurn.com/blog/development/2022-10-23-tWIL)
 ## Prerequisite
 
 - NodeJS 16
